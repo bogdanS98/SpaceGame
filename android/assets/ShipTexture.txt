@@ -1,0 +1,25 @@
+ShipTexture.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ship-1
+  rotate: false
+  xy: 2, 84
+  size: 86, 82
+  orig: 86, 82
+  offset: 0, 0
+  index: -1
+ship0
+  rotate: false
+  xy: 2, 2
+  size: 87, 80
+  orig: 87, 80
+  offset: 0, 0
+  index: -1
+ship1
+  rotate: false
+  xy: 2, 168
+  size: 86, 81
+  orig: 86, 81
+  offset: 0, 0
+  index: -1
