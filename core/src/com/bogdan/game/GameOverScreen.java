@@ -31,6 +31,8 @@ public class GameOverScreen extends ScreenAdapter{
         font.draw(batch, "GAME OVER", 195, 400);
         font.setScale(1.5f);
         font.draw(batch, "CLICK TO CONTINUE", 215, 350);
+        font.setScale(1.5f);
+        font.draw(batch, "SCORE: " + Missile.score, 270, 450);
         batch.end();
     }
 

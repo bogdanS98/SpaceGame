@@ -6,6 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 public class Missile extends GameObject{
 
     private float velocity;
+    public static int score;
 
     public Missile(Texture texture, float x, float y, float velocity) {
         super(texture, x, y);
@@ -27,6 +28,7 @@ public class Missile extends GameObject{
                     AssetLoader.explosionSound.play();
                     alien.clear();
                     alien.remove();
+                    score++;
                     clear();
                     remove();
                 }

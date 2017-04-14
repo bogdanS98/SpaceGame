@@ -23,7 +23,7 @@ public class AssetLoader {
     public static Music fightSound;
 
     public static void init(){
-        shipTexture = new Texture(Gdx.files.internal("ShipTexture.png"));
+        shipTexture = new Texture(Gdx.files.internal("Starfighter.png"));
         alien = new Texture(Gdx.files.internal("alien.png"));
         missile = new Texture(Gdx.files.internal("missile.png"));
         background = new Texture(Gdx.files.internal("stars.jpg"));

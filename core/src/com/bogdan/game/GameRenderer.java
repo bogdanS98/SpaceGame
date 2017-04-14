@@ -1,7 +1,6 @@
 package com.bogdan.game;
 
 import com.badlogic.gdx.ScreenAdapter;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Group;
@@ -11,15 +10,12 @@ import com.badlogic.gdx.utils.Timer;
 
 public class GameRenderer extends ScreenAdapter{
 
-    private int gameHeight, initX;
-
     private GameMain game;
     public static Ship ship;
     private Stage stage;
     public static Group aliens;
+
     private SpriteBatch batch = new SpriteBatch();
-    private HUD hud;
-    private BitmapFont font;
 
     public GameRenderer(GameMain game){
         this.game = game;
@@ -27,7 +23,7 @@ public class GameRenderer extends ScreenAdapter{
         stage = new Stage();
 
         ship = new Ship(AssetLoader.shipTexture, AssetLoader.HEIGHT/2 - 50, 0);
-        ship.createAnimation();
+
         stage.addActor(ship);
         aliens = new Group();
         stage.addActor(aliens);
@@ -54,7 +50,6 @@ public class GameRenderer extends ScreenAdapter{
     public void render(float delta) {
         batch.begin();
         AssetLoader.backgroundSprite.draw(batch);
-        hud = new HUD();
         batch.end();
 
         stage.act(delta);
